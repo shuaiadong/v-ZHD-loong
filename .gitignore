@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /vue-analysis
+/docs/.vuepress/dist
 
 # testing
 /coverage
