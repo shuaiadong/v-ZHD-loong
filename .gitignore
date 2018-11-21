@@ -2,14 +2,14 @@
 
 # dependencies
 /node_modules
+/dist
 /vue-analysis
-/docs/.vuepress/dist
 
 # testing
 /coverage
 
 # production
-/build
+/build.sh   
 
 # misc
 .DS_Store

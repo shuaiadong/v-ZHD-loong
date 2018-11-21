@@ -1,5 +1,7 @@
 
 module.exports = {
+    // context
+    base: '/v-ZHD-loong/',
     // header 文字
     title: 'Do .',
     // 网站描述
@@ -13,7 +15,7 @@ module.exports = {
         ['link', { rel: 'icon', href: `/logo.png` }],
     ],
     // 输出目录 默认 .vuepress/dist
-    dest: './docs/.vuepress/dist',
+    dest: 'dist',
     // // ga是谷歌推出的网站流量分析工具
     // ga: ''
     // 离线缓存
