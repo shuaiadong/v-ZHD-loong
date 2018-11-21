@@ -34,12 +34,19 @@ module.exports = {
         sidebar: [
             {
                 title: 'Dauly',
-                collapsable: false,
+                collapsable: true,
                 children: [
                     ['daily/', 'Introduction'],
                     'daily/day'
                 ]
-            },
+            },{
+                title: '深入件出React和Redux',
+                collapsable: true,
+                children: [
+                    ['react-redux/', 'Introduction'],
+                    'react-redux/Thefirstone'    
+                ]
+            }
         ]
     
     },
