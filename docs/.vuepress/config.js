@@ -13,7 +13,7 @@ module.exports = {
         ['link', { rel: 'icon', href: `/logo.png` }],
     ],
     // 输出目录 默认 .vuepress/dist
-    dest: './docs/.vuepress/dists',
+    dest: './docs/.vuepress/dist',
     // // ga是谷歌推出的网站流量分析工具
     // ga: ''
     // 离线缓存
