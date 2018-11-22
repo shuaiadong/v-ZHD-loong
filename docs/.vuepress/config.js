@@ -5,7 +5,8 @@ module.exports = {
     // header 文字
     title: 'Do .',
     // 网站描述
-    description: '不积跬步无以至千里，不积小流无以成江海。',
+    // description: '不积跬步无以至千里，不积小流无以成江海。',
+    description: `差劲的程序员操心代码，优秀的程序员操心数据结构和他们之间的关系。`,
     // ? 暂时未出来
     // head: ['link', { rel: 'icon', href: `../icon.png` }]
     // 端口 默认8080
@@ -44,7 +45,9 @@ module.exports = {
                 collapsable: true,
                 children: [
                     ['react-redux/', 'Introduction'],
-                    'react-redux/Thefirstone'    
+                    'react-redux/Thefirstone',
+                    'react-redux/TheSecondChapter'  
+                    
                 ]
             }
         ]

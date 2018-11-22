@@ -58,26 +58,63 @@ P.S. We know this message is long but please read the steps above :-) We hope yo
 ├── src             || 开发目录 `重点` 
 └── yarn.lock
 ```
+
+### 事件 
+React `事件委托`，无论多少个onClick的出现，最会都会添加最顶层的dom元素上添加一个事件处理函数，通过这个事件处理函数捕获，分配给具体组件的函数执行。
+
+### jsx
+所谓jsx，是javascript语法的扩展，让我们方便的在javascript中编写像HTML一样的代码。
+
+
+
+
+### 理念 UI = render（data）
+
+### VirtualDOM 虚拟dom  `todo AST静态语法分析树`
+
+
 ## clickCount计数器组件
-```
+```js
+    /**
+ * @author z
+ * @file
+ */
+import React, { Component, h } from 'react';
+console.group('module-app');
+
+export default class App extends Component {
+  constructor(props, context) {
+    super(props)
+
+    this.state = {
+      count: 0
+    }
+    this.onClickButton = this.onClickButton.bind(this);
+  }
+
+// methods
+  onClickButton (e) {
+    this.setState({count: ++this.state.count})
+  }
+
+  render() {
+    return (
+    h.div('', {},
+      h.h1({}, 'count'),
+        h.p({}, 'count: '+ this.state.count),
+        h.button({onClick: (e) => this.onClickButton(e)}, 'clickMe'),
+    ));
+  }
+}
+console.groupEnd('module-app');
+
 ```
 ### React 的constructor（props, context）
 :::danger todo 第二个参数是？
 
 ::: 
 
-### 事件 todo
-
-### jsx todo
-
-
-#### React `事件委托`，无论多少个onClick的出现，最会都会添加最顶层的dom元素上添加一个事件处理函数，通过这个事件处理函数捕获，分配给具体组件的函数执行。
-
-### 理念 UI = render（data）
-
-### VirtualDOM 虚拟dom  `todo AST静态语法分析树`
 ### React的优点
 - UI = render（data）
 - 渲染效率很高? 
-    - 渲染的效率是很高，但还要加上diff算法的效率。
-    
+    - 渲染的效率是很高，但还要加上diff算法计算的时间。
