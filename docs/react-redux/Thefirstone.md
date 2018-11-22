@@ -80,3 +80,4 @@ P.S. We know this message is long but please read the steps above :-) We hope yo
 - UI = render（data）
 - 渲染效率很高? 
     - 渲染的效率是很高，但还要加上diff算法的效率。
+    
