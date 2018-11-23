@@ -262,6 +262,7 @@ shouldComponentUpdate() {
 - https://segmentfault.com/q/1010000011289209
 - https://segmentfault.com/q/1010000011289209
 eventClick
+- 父组件专递事件给子组件，父组建也会进入render - 》子组件
 - 最上层的根组件需要重新render，必定导致其所有子组件都要重新render，
 - 1、执行了render方法不代表会更新dom树，在react当中你使用了setstate更新了state或者改变了传入的props，都会执行render方法，执行了render方法以后，才会生成dom树进行对比，如果dom有差异才会进行构建新的渲染树，更新对应的dom，否则，不会更新。因此，生成虚拟dom树进行对比是在render函数执行了之后进行，而不是执行之前。
 

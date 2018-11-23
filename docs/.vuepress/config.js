@@ -49,6 +49,16 @@ module.exports = {
                     'react-redux/TheSecondChapter'  
                     
                 ]
+            },
+            {
+                title: 'css',
+                collapsable: true,
+                children: [
+                    ['css/', 'Introduction'],
+                    'react-redux/Thefirstone',
+                    'react-redux/TheSecondChapter'  
+                    
+                ]
             }
         ]
     
