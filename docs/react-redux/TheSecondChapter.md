@@ -39,7 +39,7 @@ MyComponent.propTypes = {
     - 形参
         - props 
         - context ？ 不知道是啥
-2. **`componentWillMount`**
+2. **`componentWillMount`** `即将废弃`
 3. **`render` 最重要的函数 -> 返回dom结构。必须纯函数**
 4. **`componentDidMount`**
 - render执行后不会立即执行。在render后执行
@@ -128,7 +128,8 @@ componentDidUpdate
 - this.setState 不会调用componentWillReaciveProps
 :::
 - 参数
-    - 
+    - nextProps
+    - nextState
 
 ### 废除的属性 只在 createClass 中调用
 - getInitialState 
@@ -257,8 +258,22 @@ shouldComponentUpdate() {
 - 这时子组件只接收props只在`constructor`时用到了
 - 点击父组件的`改变初始值`
 :::
+
+### shouldComponentUpdate(nextProps, nextState) 返回值决定是否渲染页面
+### componentWillUpdate(nextProps, nextState, a) a ? `react 17. 废弃`
+### componentDidUpdate(nextProps, nextState) 会在服务端调用 说明代码有问题
 ## React组件state和props的局限性
+
+
+
+## 问题
+- constructor的第二个参数 ？ ``
+- componentWillUpdate 的第三个参数 ？ `客户端服务点都调用`
+- 
+
 ## 总结
+
+- react 强制刷新页面`his.forceUpdate();`
 - https://segmentfault.com/q/1010000011289209
 - https://segmentfault.com/q/1010000011289209
 eventClick

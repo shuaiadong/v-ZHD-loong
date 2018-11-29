@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+
+
+    var arr = [
+    {
+        "name":"邮寄快件",
+        "url":"/postman/pages/main.html#/index",
+        "code":"POST",
+        "pcode":null
+    },
+    {
+        "name":"寄件记录",
+        "url":"/postman/pages/main.html#/mailing-record",
+        "code":"POST_RECORD",
+        "pcode":null
+    },
+    {
+        "name":"地址薄管理",
+        "url":"/postman/pages/main.html#/address-manager",
+        "code":"ADDRESS_BOOK",
+        "pcode":null
+    },
+    {
+        "name":"收件管理",
+        "url":"",
+        "code":"RECEIVING",
+        "pcode":null
+    },
+    {
+        "name":"入库录入",
+        "url":"/postman/pages/main.html#/express-store",
+        "code":"RECEIVING_STORE",
+        "pcode":"RECEIVING"
+    },
+    {
+        "name":"收件查询",
+        "url":"/postman/pages/main.html#/piece-express",
+        "code":"RECV_SELECT",
+        "pcode":"RECEIVING"
+    },
+    {
+        "name":"寄件管理",
+        "url":"",
+        "code":"POST_MANAGEMENT",
+        "pcode":null
+    },
+    {
+        "name":"寄件查询",
+        "url":"/postman/pages/main.html#/send-express",
+        "code":"POST_QUERY",
+        "pcode":"POST_MANAGEMENT"
+    },
+    {
+        "name":"系统设置",
+        "url":"",
+        "code":"SYSTEM_SETUP",
+        "pcode":null
+    },
+    {
+        "name":"快递单号管理",
+        "url":"/postman/pages/main.html#/express-number-manage",
+        "code":"EXPRESS_NUM_MAG",
+        "pcode":"SYSTEM_SETUP"
+    },
+    {
+        "name":"财务报表管理",
+        "url":"/postman/pages/main.html#/financial-statement-manage",
+        "code":"FINANCIAL_STATEMENT",
+        "pcode":"SYSTEM_SETUP"
+    }
+]
+
+// var child = arr.filter(item=>item.pcode);
+// child.forEach((item, index) => {
+//         arr.forEach((ele, index) => {
+//             if(item.pcode === ele.code) {
+//                 !ele.child && (ele.child = [])
+//                 ele.child.push(item)
+//             }
+//         })
+// })
+
+arr.forEach(item => {
+    item.pcode && arr.forEach(ele => {
+        if (item.pcode === ele.code) {
+            !ele.child && (ele.child = [] )
+            ele.child.push(item)
+        }
+    })
+})
+
+let result = arr.filter(item=> !item.pcode)
+    console.log(result)
+    
+</script>
+</html>

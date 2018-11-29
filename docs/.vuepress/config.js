@@ -55,11 +55,21 @@ module.exports = {
                 collapsable: true,
                 children: [
                     ['css/', 'Introduction'],
-                    'react-redux/Thefirstone',
-                    'react-redux/TheSecondChapter'  
+                    // 'react-redux/Thefirstone',
+                    // 'react-redux/TheSecondChapter'  
+                    
+                ]
+            },
+            {
+                title: 'js',
+                collapsable: true,
+                children: [
+                    ['js/', 'Introduction'],
+                    'js/es6/es6',
                     
                 ]
             }
+
         ]
     
     },
