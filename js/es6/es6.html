@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>es6 | Do .</title>
+    <meta name="description" content="差劲的程序员操心代码，优秀的程序员操心数据结构和他们之间的关系。">
+    <link rel="icon" href="/v-ZHD-loong/logo.png">
+    
+    <link rel="preload" href="/v-ZHD-loong/assets/css/0.styles.a82533d4.css" as="style"><link rel="preload" href="/v-ZHD-loong/assets/js/app.7f934088.js" as="script"><link rel="preload" href="/v-ZHD-loong/assets/js/10.6c0dd5ca.js" as="script"><link rel="prefetch" href="/v-ZHD-loong/assets/js/11.bb86d2f9.js"><link rel="prefetch" href="/v-ZHD-loong/assets/js/12.5e663ca4.js"><link rel="prefetch" href="/v-ZHD-loong/assets/js/13.b984abd0.js"><link rel="prefetch" href="/v-ZHD-loong/assets/js/14.b03a58da.js"><link rel="prefetch" href="/v-ZHD-loong/assets/js/15.6c6ae60f.js"><link rel="prefetch" href="/v-ZHD-loong/assets/js/16.fea05cc9.js"><link rel="prefetch" href="/v-ZHD-loong/assets/js/2.163ee670.js"><link rel="prefetch" href="/v-ZHD-loong/assets/js/3.0f31d3ec.js"><link rel="prefetch" href="/v-ZHD-loong/assets/js/4.18323367.js"><link rel="prefetch" href="/v-ZHD-loong/assets/js/5.b315c784.js"><link rel="prefetch" href="/v-ZHD-loong/assets/js/6.1d1319c4.js"><link rel="prefetch" href="/v-ZHD-loong/assets/js/7.c781437d.js"><link rel="prefetch" href="/v-ZHD-loong/assets/js/8.842a94eb.js"><link rel="prefetch" href="/v-ZHD-loong/assets/js/9.0d21ddf5.js">
+    <link rel="stylesheet" href="/v-ZHD-loong/assets/css/0.styles.a82533d4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/v-ZHD-loong/" class="home-link router-link-active"><!----> <span class="site-name">Do .</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/v-ZHD-loong/" class="nav-link">ZHD</a></div><div class="nav-item"><a href="/v-ZHD-loong/guide/" class="nav-link">Github</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/v-ZHD-loong/" class="nav-link">ZHD</a></div><div class="nav-item"><a href="/v-ZHD-loong/guide/" class="nav-link">Github</a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>Dauly</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>深入件出React和Redux</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>css</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>js</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/v-ZHD-loong/js/" class="sidebar-link">Introduction</a></li><li><a href="/v-ZHD-loong/js/es6/es6.html" class="active sidebar-link">es6</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/v-ZHD-loong/js/es6/es6.html#常识" class="sidebar-link">常识</a></li><li class="sidebar-sub-header"><a href="/v-ZHD-loong/js/es6/es6.html#babel" class="sidebar-link">babel</a></li><li class="sidebar-sub-header"><a href="/v-ZHD-loong/js/es6/es6.html#let" class="sidebar-link">let</a></li><li class="sidebar-sub-header"><a href="/v-ZHD-loong/js/es6/es6.html#const" class="sidebar-link">const</a></li><li class="sidebar-sub-header"><a href="/v-ZHD-loong/js/es6/es6.html#字符串的扩展" class="sidebar-link">字符串的扩展</a></li></ul></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="es6"><a href="#es6" aria-hidden="true" class="header-anchor">#</a> es6</h1> <h2 id="常识"><a href="#常识" aria-hidden="true" class="header-anchor">#</a> 常识</h2> <p>es6 = es2015 2016年6月修订
+##es6支持程度检测
+http://ruanyf.github.io/es-checker/</p> <div class="language-js extra-class"><pre class="language-js"><code>$ npm install <span class="token operator">-</span>g es<span class="token operator">-</span>checker
+$ es<span class="token operator">-</span>checker
+
+<span class="token operator">===</span><span class="token operator">===</span><span class="token operator">===</span><span class="token operator">===</span><span class="token operator">===</span><span class="token operator">===</span><span class="token operator">===</span><span class="token operator">===</span><span class="token operator">===</span><span class="token operator">===</span><span class="token operator">===</span><span class="token operator">===</span><span class="token operator">===</span><span class="token operator">==</span>
+Passes <span class="token number">24</span> feature Dectations
+Your runtime supports <span class="token number">57</span><span class="token operator">%</span> <span class="token keyword">of</span> ECMAScript <span class="token number">6</span>
+</code></pre></div><h2 id="babel"><a href="#babel" aria-hidden="true" class="header-anchor">#</a> babel</h2> <p>Babel 转码器 可以将es6转换为es5</p> <h1 id="let与const"><a href="#let与const" aria-hidden="true" class="header-anchor">#</a> let与const</h1> <h3 id="_6种声明变量的方法"><a href="#_6种声明变量的方法" aria-hidden="true" class="header-anchor">#</a> 6种声明变量的方法</h3> <ul><li>var function <code>es5就有</code></li> <li>let const import class <code>全局变量与顶层对象脱离关系</code></li></ul> <h3 id="顶层对象"><a href="#顶层对象" aria-hidden="true" class="header-anchor">#</a> 顶层对象</h3> <ul><li><p>浏览器中是window</p></li> <li><p>node中是global</p></li> <li><p>都可以取到顶层对象的方法 判断或垫片的实现</p></li></ul> <h2 id="let"><a href="#let" aria-hidden="true" class="header-anchor">#</a> let</h2> <h3 id="没有变量提升"><a href="#没有变量提升" aria-hidden="true" class="header-anchor">#</a> 没有变量提升</h3> <div class="language-js extra-class"><pre class="language-js"><code>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span>
+<span class="token keyword">let</span> b <span class="token operator">=</span> <span class="token number">1</span>
+<span class="token comment">//  b is not defined</span>
+   
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">1</span>
+<span class="token comment">//  undefined</span>
+
+</code></pre></div><h3 id="不能重声明"><a href="#不能重声明" aria-hidden="true" class="header-anchor">#</a> 不能重声明</h3> <div class="language-js extra-class"><pre class="language-js"><code>
+<span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span> <span class="token comment">// 报错 不能重复声明</span>
+
+</code></pre></div><h3 id="有自己的作用域"><a href="#有自己的作用域" aria-hidden="true" class="header-anchor">#</a> 有自己的作用域</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+	<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">1</span>
+<span class="token punctuation">}</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+<span class="token comment">// 1</span>
+
+
+<span class="token punctuation">{</span>
+	<span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token number">1</span>
+<span class="token punctuation">}</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span>
+
+<span class="token comment">// b is not defined</span>
+
+
+
+
+<span class="token keyword">var</span> tmp <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token comment">// ******因为var有变量提升 并不会访问 外层的tmp*******// </span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>tmp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> tmp <span class="token operator">=</span> <span class="token string">'hello world'</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// undefined</span>
+</code></pre></div><p>隐蔽的错误</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 不一定报错 看浏览器的是想</span>
+x <span class="token operator">=</span> y 时 y还没有被声明
+<span class="token keyword">function</span> <span class="token function">bar</span><span class="token punctuation">(</span>x <span class="token operator">=</span> y<span class="token punctuation">,</span> y <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">[</span>x<span class="token punctuation">,</span> y<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">bar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token comment">// 报错 y is not defined</span>
+</code></pre></div><h2 id="const"><a href="#const" aria-hidden="true" class="header-anchor">#</a> const</h2> <h3 id="一旦声明只读常量就不能修改"><a href="#一旦声明只读常量就不能修改" aria-hidden="true" class="header-anchor">#</a> 一旦声明只读常量就不能修改</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token constant">PI</span> <span class="token operator">=</span> <span class="token number">3.1415926</span>
+<span class="token constant">PI</span> <span class="token operator">=</span> <span class="token number">3</span> <span class="token comment">// 报错</span>
+
+<span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>a<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">}</span>
+obj<span class="token punctuation">.</span>a  <span class="token operator">=</span> <span class="token number">3</span>
+<span class="token comment">// 引用类型存储的是地址，obj地址下的 a = 3</span>
+
+<span class="token comment">// a  = 3</span>
+
+
+obj <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">// 报错</span>
+</code></pre></div> <h1 id="变量的解构赋值"><a href="#变量的解构赋值" aria-hidden="true" class="header-anchor">#</a> 变量的解构赋值</h1> <p>1.数组的解构赋值</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> <span class="token punctuation">[</span>a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> c<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span>
+<span class="token comment">// a = 1 b =2 c= 3</span>
+
+
+<span class="token keyword">let</span> <span class="token punctuation">[</span>a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> <span class="token operator">...</span>c<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span> <span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">]</span>
+<span class="token comment">// a = 1 b =2 c= [3, 4, 5, 6]</span>
+
+
+<span class="token keyword">let</span> <span class="token punctuation">[</span>a<span class="token punctuation">,</span> <span class="token punctuation">[</span>b<span class="token punctuation">]</span><span class="token punctuation">,</span> c<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span>
+<span class="token comment">// a = 1 b = 2 c= 3</span>
+
+
+<span class="token comment">// 设置默认值</span>
+<span class="token keyword">let</span> <span class="token punctuation">[</span>a<span class="token punctuation">,</span> <span class="token punctuation">[</span>b<span class="token punctuation">]</span><span class="token punctuation">,</span> c<span class="token punctuation">,</span> d <span class="token operator">=</span> <span class="token number">999</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span>
+<span class="token comment">// 999</span>
+
+<span class="token comment">// 特殊的结构赋值</span>
+<span class="token keyword">let</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span>
+<span class="token keyword">let</span> <span class="token punctuation">{</span><span class="token number">0</span> <span class="token punctuation">:</span> first<span class="token punctuation">,</span> <span class="token punctuation">[</span>arr<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token punctuation">:</span> last<span class="token punctuation">}</span> <span class="token operator">=</span> arr<span class="token punctuation">;</span>
+<span class="token comment">// first 1</span>
+<span class="token comment">// last  4</span>
+</code></pre></div><p>2.对象的解构赋值</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// </span>
+<span class="token keyword">let</span> <span class="token punctuation">{</span>a<span class="token punctuation">,</span> b<span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token punctuation">{</span>a<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span> b<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span> c<span class="token punctuation">:</span><span class="token number">3</span><span class="token punctuation">}</span>
+<span class="token comment">// a = 1  b= 2</span>
+
+<span class="token comment">// 起别名（重命名）</span>
+<span class="token keyword">let</span> <span class="token punctuation">{</span>a<span class="token punctuation">:</span> c<span class="token punctuation">,</span> b<span class="token punctuation">:</span> d<span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token punctuation">{</span>a<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span> b<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span> c<span class="token punctuation">:</span><span class="token number">3</span><span class="token punctuation">}</span>
+<span class="token comment">// c = 1 d = 2</span>
+
+<span class="token comment">// 深层嵌套结构</span>
+obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+	a<span class="token punctuation">:</span> <span class="token punctuation">{</span>b<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// a 不会被结构出来</span>
+<span class="token keyword">let</span> <span class="token punctuation">{</span>a<span class="token punctuation">:</span> <span class="token punctuation">{</span>b<span class="token punctuation">}</span> <span class="token punctuation">}</span> <span class="token operator">=</span> obj
+<span class="token comment">// b [1, 2]</span>
+
+<span class="token comment">// 结构复制的默认值</span>
+<span class="token keyword">let</span> <span class="token punctuation">{</span>a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> d <span class="token operator">=</span> <span class="token number">999</span><span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token punctuation">{</span>a<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span> b<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span> c<span class="token punctuation">:</span><span class="token number">3</span><span class="token punctuation">}</span>
+<span class="token comment">// d = 999</span>
+
+<span class="token comment">// 提前定义在赋值</span>
+<span class="token keyword">let</span> x<span class="token punctuation">;</span>
+<span class="token punctuation">(</span><span class="token punctuation">{</span>x<span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token punctuation">{</span>x<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>3.字符串的解构赋值(类数组)</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 装换为类数组结构赋值</span>
+<span class="token keyword">let</span> str <span class="token operator">=</span> <span class="token string">'hello'</span> 
+<span class="token keyword">let</span> <span class="token punctuation">[</span>a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> c<span class="token punctuation">,</span> d<span class="token punctuation">,</span> e<span class="token punctuation">]</span> <span class="token operator">=</span> str
+
+
+<span class="token keyword">let</span> <span class="token punctuation">[</span>a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>c<span class="token punctuation">,</span>d<span class="token punctuation">,</span>e<span class="token punctuation">]</span> <span class="token operator">=</span><span class="token string">&quot;Hello&quot;</span><span class="token punctuation">;</span>
+    <span class="token comment">// a = h  ,b = e ···</span>
+
+</code></pre></div><p>4.数值和布尔值的解构赋值</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 会先转换为对象</span>
+<span class="token keyword">let</span> <span class="token punctuation">{</span>toString<span class="token punctuation">:</span> s<span class="token punctuation">}</span>  <span class="token operator">=</span> <span class="token string">'111'</span>
+undefined
+s <span class="token operator">===</span> String<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>toString
+<span class="token comment">// true</span>
+
+
+<span class="token keyword">let</span> <span class="token punctuation">{</span>toString<span class="token punctuation">:</span> s<span class="token punctuation">}</span>  <span class="token operator">=</span> <span class="token boolean">true</span>
+undefined
+s <span class="token operator">===</span> Boolean<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>toString
+<span class="token comment">// true</span>
+
+</code></pre></div><p>5.函数参数的解构赋值</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 参数的形式</span>
+
+    <span class="token comment">// 数组</span>
+    <span class="token keyword">function</span> <span class="token function">fun</span><span class="token punctuation">(</span><span class="token punctuation">[</span>x<span class="token punctuation">,</span> y<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> x <span class="token operator">+</span> y
+    <span class="token punctuation">}</span>
+    <span class="token function">fun</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+    <span class="token comment">// 给默认值</span>
+    <span class="token keyword">function</span> <span class="token function">fun</span><span class="token punctuation">(</span><span class="token punctuation">[</span>x <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> y <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> x <span class="token operator">+</span> y
+    <span class="token punctuation">}</span>
+    <span class="token function">fun</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+
+<span class="token comment">// 对象</span>
+<span class="token comment">// 数组</span>
+    <span class="token keyword">function</span> <span class="token function">fun</span><span class="token punctuation">(</span><span class="token punctuation">{</span>x<span class="token punctuation">,</span> y<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> x <span class="token operator">+</span> y
+    <span class="token punctuation">}</span>
+    <span class="token function">fun</span><span class="token punctuation">(</span><span class="token punctuation">{</span>x<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span> y<span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token comment">// 3</span>
+    <span class="token comment">// 给默认值</span>
+     <span class="token keyword">function</span> <span class="token function">fun</span><span class="token punctuation">(</span><span class="token punctuation">{</span>x <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> y <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> x <span class="token operator">+</span> y
+    <span class="token punctuation">}</span>
+    <span class="token function">fun</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token comment">// 3</span>
+
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 我认为的小技巧</span>
+<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> undefined<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span>item <span class="token operator">=</span> <span class="token string">'yes'</span> <span class="token operator">=&gt;</span> item<span class="token punctuation">)</span>
+<span class="token comment">// 1, yes, 2</span>
+
+<span class="token comment">// Boolean 是个函数</span>
+<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> undefined<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span>Boolean<span class="token punctuation">)</span>
+</code></pre></div><h2 id="字符串的扩展"><a href="#字符串的扩展" aria-hidden="true" class="header-anchor">#</a> 字符串的扩展</h2> <p>codePointAt</p></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/v-ZHD-loong/js/" class="prev router-link-active">
+          Introduction
+        </a></span> <!----></p></div> </div> <!----></div></div>
+    <script src="/v-ZHD-loong/assets/js/10.6c0dd5ca.js" defer></script><script src="/v-ZHD-loong/assets/js/app.7f934088.js" defer></script>
+  </body>
+</html>
